@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="managersystemModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="manager">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="managername" Type="varchar" MaxLength="30" />
+          <Property Name="password" Type="varchar" MaxLength="10" />
+          <Property Name="managercode" Type="varchar" MaxLength="20" />
+          <Property Name="phone" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="news">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="40" />
+          <Property Name="author" Type="varchar" MaxLength="15" />
+          <Property Name="source" Type="varchar" MaxLength="30" />
+          <Property Name="keyword" Type="varchar" MaxLength="30" />
+          <Property Name="contents" Type="text" />
+          <Property Name="createusername" Type="varchar" MaxLength="30" />
+          <Property Name="createtome" Type="date" />
+          <Property Name="introduce" Type="varchar" MaxLength="200" />
+          <Property Name="status" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="story">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="100" />
+          <Property Name="content" Type="text" />
+          <Property Name="source" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="managersystemModelStoreContainer">
+          <EntitySet Name="manager" EntityType="Self.manager" Schema="managersystem" store:Type="Tables" />
+          <EntitySet Name="news" EntityType="Self.news" Schema="managersystem" store:Type="Tables" />
+          <EntitySet Name="story" EntityType="Self.story" Schema="managersystem" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="managersystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="manager">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="managername" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="managercode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="news">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="author" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="source" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="keyword" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="contents" Type="String" MaxLength="10000" FixedLength="false" Unicode="false" />
+          <Property Name="createusername" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="createtome" Type="DateTime" />
+          <Property Name="introduce" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="managersystemEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="manager" EntityType="Self.manager" />
+          <EntitySet Name="news" EntityType="Self.news" />
+          <EntitySet Name="story" EntityType="managersystemModel.story" />
+        </EntityContainer>
+        <EntityType Name="story">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="source" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="managersystemModelStoreContainer" CdmEntityContainer="managersystemEntities">
+          <EntitySetMapping Name="manager">
+            <EntityTypeMapping TypeName="managersystemModel.manager">
+              <MappingFragment StoreEntitySet="manager">
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="managername" ColumnName="managername" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="managercode" ColumnName="managercode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="news">
+            <EntityTypeMapping TypeName="managersystemModel.news">
+              <MappingFragment StoreEntitySet="news">
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="introduce" ColumnName="introduce" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="author" ColumnName="author" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="keyword" ColumnName="keyword" />
+                <ScalarProperty Name="contents" ColumnName="contents" />
+                <ScalarProperty Name="createusername" ColumnName="createusername" />
+                <ScalarProperty Name="createtome" ColumnName="createtome" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="story">
+            <EntityTypeMapping TypeName="managersystemModel.story">
+              <MappingFragment StoreEntitySet="story">
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

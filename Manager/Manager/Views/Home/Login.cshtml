@@ -1,0 +1,194 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="@Url.Content("~/css/bootstrap.css")" rel="stylesheet">
+    <script src="@Url.Content("~/Script/bootstrap.js")"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background: url(background.jpg) no-repeat 0px 0px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        #loginDiv {
+            width: 37%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            background-color: rgba(75, 81, 95, 0.3);
+            box-shadow: 7px 7px 17px rgba(52, 56, 66, 0.5);
+            border-radius: 5px;
+        }
+
+        #name_trip {
+            margin-left: 50px;
+            color: red;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-left: 20px;
+            color: azure;
+        }
+
+        input {
+            margin-left: 15px;
+            border-radius: 5px;
+            border-style: hidden;
+            height: 30px;
+            width: 140px;
+            background-color: rgba(216, 191, 216, 0.5);
+            outline: none;
+            color: #f0edf3;
+            padding-left: 10px;
+        }
+
+        select {
+            background-color: rgba(216, 191, 216, 0.5);
+            color: #f0edf3;
+            margin-left: 20px;
+            width: 100px;
+        }
+
+        option {
+            background-color: rgba(216, 191, 216, 0.5);
+            color: #f0edf3;
+            margin-top: 5px;
+        }
+
+        .button {
+            border-color: cornsilk;
+            background-color: rgba(100, 149, 237, .7);
+            color: aliceblue;
+            border-style: hidden;
+            border-radius: 5px;
+            width: 100px;
+            height: 31px;
+            font-size: 16px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function login() {
+            //获取select对象
+            var selec = document.getElementById("iden");
+            //获取选中的值
+            var selecindex = selec.selectedIndex;
+            var selecvalue = selec.options[selecindex].value;
+            // alert(selecvalue);
+        }
+
+        $(document).ready(function () {
+            $("#Name").focus();
+        });
+        //获取验证码
+        function GetVCodeImg() {
+            $("#imgVCode").attr("src", "/Home/GetVCodeImg?t=" + new Date().getSeconds());
+        }
+        //验证码
+        function yanzheng() {
+            var a = document.getElementById("Name");
+            alert($("#VCode").val());
+        }
+        //跳转到注册页面
+        function register() {
+
+            document.location.href = "/Home/About";
+        }
+
+        function login1() {
+            
+            //获取下拉菜单的值
+            //获取select对象
+            var selec = document.getElementById("iden");
+            //获取选中的值
+            var selecindex = selec.selectedIndex;
+            var selecvalue = selec.options[selecindex].value;
+            $.ajax(
+                {
+                    url: "/Home/Login",
+                    datatype: 'json',
+                    type: 'POST',
+                    data: "managername=" + $("#Name").val() + "&password=" + $("#password").val() + "&VCode=" + $("#VCode").val() + "&iden=" + selecvalue,
+                    success: function (data, textStatus, XMLHttpRequest) {
+                        //测试
+                        // alert(data.code);
+                        /*"-1"代表后端验证失败，弹出信息
+                          "1"代表后端验证成功
+                         */
+                        if (data.code == "-1") {
+                            alert(data.msg);
+                        } else if (data.code == "1") {
+                            alert(data.msg);
+                            document.location.href = data.url;
+                        }
+                        //success
+                    }
+                });
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="loginDiv">
+        <div id="form">
+            <h1 style="text-align: center;color: aliceblue;">建党新闻系统</h1>
+            <p>用户名:<input id="Name" type="text"><label id="name_trip"></label></p>
+
+            <p>密&nbsp;&nbsp;&nbsp;码:  <input id="password" type="password"><label id="password_trip"></label></p>
+
+            <p>
+                验证码:
+                <input id="VCode" name="VCode" type="text" class="loginTxt2" value="" />&nbsp;
+            </p>
+            <p>
+                <select id="iden">
+                    <option value="1">管理员</option>
+                    <option value="2">作者</option>
+                </select>
+
+            </p>
+            <p>
+                <a href="javascript:void()" style="cursor: pointer; float:left; margin-left:4px;" onclick="GetVCodeImg()">
+                    <img id="imgVCode" src="/Home/GetVCodeImg" alt="点击换一换" />
+                </a>
+            </p>
+            <br>
+            <div style="text-align: center;margin-top: 30px;">
+                <input type="submit" class="button" value="登录" name="sumit" onclick="login1()">
+                <input type="button" class="button" value="注册" onclick="register()">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

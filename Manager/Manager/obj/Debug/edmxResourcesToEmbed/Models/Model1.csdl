@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="managersystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="manager">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="managername" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="managercode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="news">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="author" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="source" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="keyword" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="contents" Type="String" MaxLength="10000" FixedLength="false" Unicode="false" />
+    <Property Name="createusername" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="createtome" Type="DateTime" />
+    <Property Name="introduce" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="managersystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="manager" EntityType="Self.manager" />
+    <EntitySet Name="news" EntityType="Self.news" />
+    <EntitySet Name="story" EntityType="managersystemModel.story" />
+  </EntityContainer>
+  <EntityType Name="story">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="source" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

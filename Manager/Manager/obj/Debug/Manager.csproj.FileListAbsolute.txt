@@ -1,0 +1,204 @@
+C:\Users\Yu\source\repos\Manager\Manager\bin\Manager.dll.config
+C:\Users\Yu\source\repos\Manager\Manager\bin\Manager.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\Manager.pdb
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\csc.exe
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\csc.exe.config
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\csc.rsp
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\csi.exe
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\csi.rsp
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\System.AppContext.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\vbc.exe
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\vbc.exe.config
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\vbc.rsp
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\VBCSCompiler.exe
+C:\Users\Yu\source\repos\Manager\Manager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Yu\source\repos\Manager\Manager\bin\Antlr3.Runtime.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\EntityFramework.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\Newtonsoft.Json.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.Helpers.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.Mvc.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.Optimization.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.Razor.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.WebPages.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\WebGrease.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\EntityFramework.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.Helpers.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.Mvc.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.Optimization.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.Razor.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.WebPages.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\Newtonsoft.Json.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\Antlr3.Runtime.pdb
+C:\Users\Yu\source\repos\Manager\Manager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Yu\source\repos\Manager\Manager\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Yu\source\repos\Manager\Manager\obj\Debug\Manager.csproj.CoreCompileInputs.cache
+C:\Users\Yu\source\repos\Manager\Manager\obj\Debug\Manager.csproj.CopyComplete
+C:\Users\Yu\source\repos\Manager\Manager\obj\Debug\Manager.dll
+C:\Users\Yu\source\repos\Manager\Manager\obj\Debug\Manager.pdb
+C:\Users\Yu\source\repos\Manager\Manager\bin\Utility.dll
+C:\Users\Yu\source\repos\Manager\Manager\bin\Utility.pdb
+C:\Users\Yu\source\repos\Manager\Manager\obj\Debug\Manager.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Manager.dll.config
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Manager.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Manager.pdb
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\csc.exe
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\csc.exe.config
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\csc.rsp
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\csi.exe
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\csi.rsp
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\System.AppContext.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\vbc.exe
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\vbc.exe.config
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\vbc.rsp
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Antlr3.Runtime.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\EntityFramework.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Newtonsoft.Json.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.Helpers.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.Mvc.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.Optimization.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.Razor.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.WebPages.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.WebPages.Razor.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Utility.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\WebGrease.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Utility.pdb
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\EntityFramework.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.Helpers.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.Mvc.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.Optimization.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.Razor.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.WebPages.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\System.Web.WebPages.Razor.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Newtonsoft.Json.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Antlr3.Runtime.pdb
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\obj\Debug\Manager.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\obj\Debug\Manager.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\obj\Debug\Manager.csproj.CopyComplete
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\obj\Debug\Manager.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Manager\obj\Debug\Manager.pdb
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Manager.dll.config
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Manager.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Manager.pdb
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\csc.exe.config
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\csc.rsp
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\csi.exe
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\csi.rsp
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\vbc.rsp
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\Manager\Manager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Antlr3.Runtime.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.Optimization.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Utility.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\WebGrease.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Utility.pdb
+C:\Users\ASUS\Desktop\Manager\Manager\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.Optimization.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS\Desktop\Manager\Manager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\Manager\Manager\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ASUS\Desktop\Manager\Manager\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\ASUS\Desktop\Manager\Manager\obj\Debug\Manager.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Manager\Manager\obj\Debug\Manager.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Manager\Manager\obj\Debug\Manager.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Manager\Manager\obj\Debug\Manager.dll
+C:\Users\ASUS\Desktop\Manager\Manager\obj\Debug\Manager.pdb

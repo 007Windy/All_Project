@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "ManagerIndex";
+    Layout = null;
+    var manager = (Manager.Models.manager)Session["manager"];
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="@Url.Content("~/css/bootstrap.css")" rel="stylesheet">
+    <script src="@Url.Content("~/Script/bootstrap.js")"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <meta charset ="UTF-8">
+        <title></title>
+        <style type="text/css">
+
+            a:link {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                color: #6E6767;
+                text-decoration: double;
+            }
+
+            body {
+                background-color: #EEEEEE;
+            }
+
+            #container {
+                width: 1200px;
+                position: absolute;
+                left: 200px;
+            }
+
+            #banner {
+                background-color: yellow;
+                height: 150px;
+                width: auto;
+            }
+
+            #header {
+                width: 1200px;
+            }
+
+            #menu {
+                background-color: white;
+                height: 400px;
+                width: 200px;
+                float: left;
+                margin-right: 20px;
+                margin-left: 30px;
+            }
+
+            #menutitle {
+                font-size: 25px;
+                text-align: center;
+                background-color: whitesmoke;
+            }
+
+
+            .menu_href {
+                margin-top: 100px;
+                margin-left: 20px;
+            }
+
+
+
+            #menu table {
+                font-size: 18px;
+                text-align: center;
+                width: 80%;
+            }
+
+            #content {
+                background-color: white;
+                height: 800px;
+                width: 900px;
+                float: left;
+            }
+
+            #content_news {
+                height: 25px;
+                background-color: powderblue;
+            }
+
+            .conter_middle {
+                margin-top: 100px;
+                margin-left: 200px;
+                margin-right: 200px;
+                border: 2px solid red;
+            }
+
+
+                .conter_middle table {
+                    border: 1px solid;
+                    text-align: center;
+                    width: 85%;
+                    font-size: 10px;
+                }
+
+                .conter_middle td, th {
+                    border: 1px solid #6e6767;
+                    height: 30px;
+                }
+
+            .conter_down {
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px;
+            }
+
+                .conter_down > * {
+                    margin-right: 8px;
+                }
+
+            #footer {
+            }
+        </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+        </div>
+        <div id="header" style="background-color:white;    margin-bottom: 8px; margin-top: 0px; padding-top: 0px; height: 25px;">
+            您现在位置：首页>新闻
+        </div>
+
+        <div id="menu">
+            <div id="menutitle" style="font color: gray">
+                <font color="gray">菜单</font>
+            </div>
+            <div class="menu_href">
+                <table border="0" cellspacing="" cellpadding="10px">
+                    <tr><td><a href=" ">管理员</a></td></tr>
+                    <tr> <td> <a href="/Home/article_show">内容管理</a></td></tr>    
+                </table>
+            </div>
+        </div>
+        <div id="content">
+            <div class="conter_middle">
+                编码: <span id="code">@manager.managercode</span>
+                <br />
+                <br />
+                姓名: <span id="name">@manager.managername</span>
+                <br />
+                <br />
+                联系方式: <span id="phone">@manager.phone</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer" style="background-color:black;clear:both;text-align:center;">
+     
+    </div>
+</body>
+
+<script type="text/javascript">
+
+</script>
+
+</html>
+

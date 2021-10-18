@@ -1,0 +1,38 @@
+G:\教务处\GDJW第二阶段\Utility\bin\Debug\Utility.dll
+G:\教务处\GDJW第二阶段\Utility\bin\Debug\Utility.pdb
+G:\教务处\GDJW第二阶段\Utility\obj\Debug\Utility.dll
+G:\教务处\GDJW第二阶段\Utility\obj\Debug\Utility.pdb
+G:\教务处\GDJW第二阶段\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+G:\教务处\GDJW第二阶段1-登陆\Utility\bin\Debug\Utility.dll
+G:\教务处\GDJW第二阶段1-登陆\Utility\bin\Debug\Utility.pdb
+G:\教务处\GDJW第二阶段1-登陆\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+G:\教务处\GDJW第二阶段1-登陆\Utility\obj\Debug\Utility.dll
+G:\教务处\GDJW第二阶段1-登陆\Utility\obj\Debug\Utility.pdb
+F:\基于.net的开发技术\Test\GDJW第二阶段1-登陆\Utility\bin\Debug\Utility.dll
+F:\基于.net的开发技术\Test\GDJW第二阶段1-登陆\Utility\bin\Debug\Utility.pdb
+F:\基于.net的开发技术\Test\GDJW第二阶段1-登陆\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+F:\基于.net的开发技术\Test\GDJW第二阶段1-登陆\Utility\obj\Debug\Utility.dll
+F:\基于.net的开发技术\Test\GDJW第二阶段1-登陆\Utility\obj\Debug\Utility.pdb
+C:\Users\Yu\Desktop\.net实验\GDJW第二阶段1-登陆\GDJW第二阶段1-登陆\Utility\bin\Debug\Utility.dll
+C:\Users\Yu\Desktop\.net实验\GDJW第二阶段1-登陆\GDJW第二阶段1-登陆\Utility\bin\Debug\Utility.pdb
+C:\Users\Yu\Desktop\.net实验\GDJW第二阶段1-登陆\GDJW第二阶段1-登陆\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\Yu\Desktop\.net实验\GDJW第二阶段1-登陆\GDJW第二阶段1-登陆\Utility\obj\Debug\Utility.dll
+C:\Users\Yu\Desktop\.net实验\GDJW第二阶段1-登陆\GDJW第二阶段1-登陆\Utility\obj\Debug\Utility.pdb
+C:\Users\Yu\source\repos\test_one\Utility\bin\Debug\Utility.dll
+C:\Users\Yu\source\repos\test_one\Utility\bin\Debug\Utility.pdb
+C:\Users\Yu\source\repos\test_one\Utility\obj\Debug\Utility.csprojAssemblyReference.cache
+C:\Users\Yu\source\repos\test_one\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\Yu\source\repos\test_one\Utility\obj\Debug\Utility.dll
+C:\Users\Yu\source\repos\test_one\Utility\obj\Debug\Utility.pdb
+C:\Users\Yu\source\repos\Manager\Utility\bin\Debug\Utility.dll
+C:\Users\Yu\source\repos\Manager\Utility\bin\Debug\Utility.pdb
+C:\Users\Yu\source\repos\Manager\Utility\obj\Debug\Utility.csprojAssemblyReference.cache
+C:\Users\Yu\source\repos\Manager\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\Yu\source\repos\Manager\Utility\obj\Debug\Utility.dll
+C:\Users\Yu\source\repos\Manager\Utility\obj\Debug\Utility.pdb
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Utility\bin\Debug\Utility.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Utility\bin\Debug\Utility.pdb
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Utility\obj\Debug\Utility.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Utility\obj\Debug\Utility.dll
+C:\Users\HP\Desktop\新建文件夹 (21)\Manager\Utility\obj\Debug\Utility.pdb

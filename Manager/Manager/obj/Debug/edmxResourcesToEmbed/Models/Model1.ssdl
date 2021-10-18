@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="managersystemModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="manager">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="managername" Type="varchar" MaxLength="30" />
+    <Property Name="password" Type="varchar" MaxLength="10" />
+    <Property Name="managercode" Type="varchar" MaxLength="20" />
+    <Property Name="phone" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="news">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="40" />
+    <Property Name="author" Type="varchar" MaxLength="15" />
+    <Property Name="source" Type="varchar" MaxLength="30" />
+    <Property Name="keyword" Type="varchar" MaxLength="30" />
+    <Property Name="contents" Type="text" />
+    <Property Name="createusername" Type="varchar" MaxLength="30" />
+    <Property Name="createtome" Type="date" />
+    <Property Name="introduce" Type="varchar" MaxLength="200" />
+    <Property Name="status" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="story">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="100" />
+    <Property Name="content" Type="text" />
+    <Property Name="source" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityContainer Name="managersystemModelStoreContainer">
+    <EntitySet Name="manager" EntityType="Self.manager" Schema="managersystem" store:Type="Tables" />
+    <EntitySet Name="news" EntityType="Self.news" Schema="managersystem" store:Type="Tables" />
+    <EntitySet Name="story" EntityType="Self.story" Schema="managersystem" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

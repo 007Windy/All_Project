@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Search";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="@Url.Content("~/css/bootstrap.css")" rel="stylesheet">
+    <script src="@Url.Content("~/Script/bootstrap.js")"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <meta charset ="utf-8">
+        <title></title>
+</head>
+<body>
+    <input type="text" id="word" />
+    <p>
+        <select id="iden">
+            <option value="title">标题</option>
+            <option value="author">作者</option>
+        </select>
+
+    </p>
+
+    <p>
+        <select id="sort">
+            <option value="up">升序</option>
+            <option value="down">降序</option>
+        </select>
+
+    </p>
+    <input type="button" onclick="Search()" />
+
+</body>
+
+<script type="text/javascript">
+	function Search()
+    {
+        var selec = document.getElementById("iden");
+        //获取选中的值
+        var selecindex = selec.selectedIndex;
+        var selecvalue = selec.options[selecindex].value;
+
+        var selecsort = document.getElementById("sort");
+        //获取选中的值
+        var selecindexsort = selecsort.selectedIndex;
+        var selecvaluesort = selecsort.options[selecindex].value;
+			$.ajax(
+			            {
+			                url: "/User_/Search",
+			                type: "POST",
+                    dataType: "JSON",
+                    data: "word=" + $("#word").val() + "&type=" + selecvalue + "&sort=" + selecvaluesort,
+			                success: function (data, textStatus, XMLHttpRequest) {
+			                    if (data.code == "1") {
+			                        alert(data.msg);
+			                    }
+			                    else {
+			                        alert(data.msg);
+			                    }
+			                }
+			            });
+	
+
+	
+	}
+</script>
+
+</html>

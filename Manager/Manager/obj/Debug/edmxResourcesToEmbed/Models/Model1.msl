@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="managersystemModelStoreContainer" CdmEntityContainer="managersystemEntities">
+    <EntitySetMapping Name="manager">
+      <EntityTypeMapping TypeName="managersystemModel.manager">
+        <MappingFragment StoreEntitySet="manager">
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="managername" ColumnName="managername" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="managercode" ColumnName="managercode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="news">
+      <EntityTypeMapping TypeName="managersystemModel.news">
+        <MappingFragment StoreEntitySet="news">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="introduce" ColumnName="introduce" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="keyword" ColumnName="keyword" />
+          <ScalarProperty Name="contents" ColumnName="contents" />
+          <ScalarProperty Name="createusername" ColumnName="createusername" />
+          <ScalarProperty Name="createtome" ColumnName="createtome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="story">
+      <EntityTypeMapping TypeName="managersystemModel.story">
+        <MappingFragment StoreEntitySet="story">
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,340 @@
+﻿
+@{
+    ViewBag.Title = "article_show";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="@Url.Content("~/css/bootstrap.css")" rel="stylesheet">
+    <script src="@Url.Content("~/Script/bootstrap.js")"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <meta charset ="utf-8">
+        <title></title>
+        <style type="text/css">
+
+            a:link {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                color: #6E6767;
+                text-decoration: double;
+            }
+
+            body {
+                background-color: #EEEEEE;
+            }
+
+            #container {
+                width: 1200px;
+                position: absolute;
+                left: 200px;
+            }
+
+            #banner {
+                background-color: yellow;
+                height: 150px;
+                width: auto;
+            }
+
+            #header {
+                width: 1200px;
+            }
+
+            #menu {
+                background-color: white;
+                height: 400px;
+                width: 200px;
+                float: left;
+                margin-right: 20px;
+                margin-left: 30px;
+            }
+
+            #menutitle {
+                font-size: 25px;
+                text-align: center;
+                background-color: whitesmoke;
+            }
+
+
+            .menu_href {
+                margin-top: 100px;
+                margin-left: 20px;
+            }
+
+
+
+            #menu table {
+                font-size: 18px;
+                text-align: center;
+                width: 80%;
+            }
+
+            #content {
+                background-color: white;
+                height: 800px;
+                width: 900px;
+                float: left;
+            }
+
+            #content table {
+                   border: 1px solid;
+                   text-align: center;
+                   width: 100%;
+                   font-size: 10px; 
+                   margin-top:100px;
+            }
+            #thead th{
+               font-size:17px;
+            }
+
+            
+          
+
+           
+        </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+        </div>
+        <div id="header" style="background-color:white;    margin-bottom: 8px; margin-top: 0px; padding-top: 0px; height: 25px;">
+            您现在位置：首页>新闻
+        </div>
+
+        <div id="menu">
+            <div id="menutitle" style="font color: gray">
+                <font color="gray">菜单</font>
+            </div>
+            <div class="menu_href">
+                <table border="0" cellspacing="" cellpadding="10px">
+                    <tr><td><a href="">用户管理</a></td></tr>
+                    <tr><td> <input type="button" value="添加" onclick="add()" /> </td></tr>
+                    <tr><td> <input type="button" value="刷新" onclick="test()" /> </td></tr>
+                    <tr><td><input style="width: 100px;" type="text" id="username" /></td></tr>
+                </table>
+            </div>
+        </div>
+        <div id="content">
+            <table id="idData">
+                <thead id="thead">
+                    <tr>
+                        <th>标题</th>
+                        <th>作者</th>
+                        <th>来源</th>
+                        <th>关键字</th>
+                        <th>提交状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody  id="article"></tbody>
+            </table>
+        </div>
+
+        <div id="footer" style="background-color:black;clear:both;text-align:center;">
+
+        </div>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    function goPage(pno, psize) {
+        var itable = document.getElementById("idData");
+        var num = itable.rows.length;//表格所有行数(所有记录数)
+        var totalPage = 0;//总页数
+        var pageSize = psize;//每页显示行数
+        //总共分几页
+
+        if (num / pageSize > parseInt(num / pageSize)) {
+            totalPage = parseInt(num / pageSize) + 1;
+        } else {
+            totalPage = parseInt(num / pageSize);
+        }
+        var currentPage = pno;//当前页数
+        var startRow = (currentPage - 1) * pageSize + 1;//开始显示的行  31
+        var endRow = currentPage * pageSize;//结束显示的行   40
+        endRow = (endRow > num) ? num : endRow;
+        console.log(endRow);
+        //遍历显示数据实现分页
+        for (var i = 1; i < (num + 1); i++) {
+            var irow = itable.rows[i - 1];
+            if (i >= startRow && i <= endRow) {
+                irow.style.display = "table-row";
+            } else {
+                irow.style.display = "none";
+            }
+        }
+
+        var tempStr = "共" + num + "条记录 分" + totalPage + "页 当前第" + currentPage + "页";
+        if (currentPage > 1) {
+            tempStr += "<a href=\"#\" onClick=\"goPage(" + (1) + "," + psize + ")\">首页</a>";
+            tempStr += "<a href=\"#\" onClick=\"goPage(" + (currentPage - 1) + "," + psize + ")\"><上一页</a>"
+        } else {
+            tempStr += "首页";
+            tempStr += "<上一页";
+        }
+
+        if (currentPage < totalPage) {
+            tempStr += "<a href=\"#\" onClick=\"goPage(" + (currentPage + 1) + "," + psize + ")\">下一页></a>";
+            tempStr += "<a href=\"#\" onClick=\"goPage(" + (totalPage) + "," + psize + ")\">尾页</a>";
+        } else {
+            tempStr += "下一页>";
+            tempStr += "尾页";
+        }
+
+        document.getElementById("barcon").innerHTML = tempStr;
+
+    }
+
+     function test() {
+            $.ajax({
+                url: "/Home/article_show",
+                dataType: 'JSON',
+                type: 'POST',
+                data: "author=111" ,
+                success: function (data, textStatus, XMLHttpRequest) {
+                    //测试                 
+                    if (data == null) {
+                        alert("查询失败!")
+                    }
+                    var json = JSON.parse(data);
+                    //alert(json);
+                    var tbody = document.getElementById("article");
+                    //创建行
+                    for (var i = 0; i < json.length; i++) {
+                        var tr = document.createElement("tr");
+                        tbody.appendChild(tr);
+                        //创建列
+                        for (var k in json[i]) {
+                            var td = document.createElement("td");  //创建单元格
+                            if (k != "id" && k != "contents" && k!="createusername"  && k!="createtome"  && k!="introduce") {
+                                tr.appendChild(td);
+                                td.innerHTML = json[i][k];
+                            }
+                            //把对象里面的属性值 datas[i][k]给td
+                        }
+                        //创建有删除,添加二字的单元格
+                        var td = document.createElement("td");
+                        tr.appendChild(td);
+                        td.innerHTML = "<a href='javascript::' onclick='show(this)' > 详情</a>    <a href='javascript:;' onclick='show(this)' >编辑</a>   <a href='javascript:;' onclick='delet(this)' >删除</a> <a href='javascript:;' onclick='changestatus(this)'>更改状态</a> ";
+                    }
+                }
+            });
+	        //分页  当前页数  每页数据
+	      // goPage(1, 2);
+
+	    }
+
+
+
+    function show(ins) {
+        //获取单元格所在的行
+        var sm = ins.parentNode.parentNode.getElementsByTagName("td");
+        //根据值判断回调成功后的跳转页面
+        var a = ins.innerText;
+        if (a == "编辑") {
+            a = "change";
+        }
+        else
+            a = "show";
+        //获取行的值
+        var author = sm[1].innerText;
+        var title = sm[0].innerText;
+        $.ajax({
+            url: "/Home/Search",
+            type: "POST",
+            dataType: 'JSON',
+            data: "title=" + title + "&author=" + author + "&method=" + a,
+            success: function (data, textStatus, XMLHttpRequest) {
+                //跳转到详细信息页面
+                if (data.code == 1) {
+                    alert("即将跳转页面");
+                    document.location.href =data.url;
+                }
+                //跳转到编辑页面
+                if (data.code == 2) {
+                    alert("即将跳转页面");
+                    document.location.href = data.url;
+                }
+            }
+        });
+    }  
+
+    //删除信息
+    function delet(ins) {
+        var a = ins.parentNode.parentNode;
+        var dm = ins.parentNode.parentNode.getElementsByTagName("td");
+        var title = dm[0].innerText;
+        var author = dm[1].innerText;
+        // alert(title.innerText);
+        $.ajax({
+            url: "/Home/delete",
+            dataType: 'JSON',
+            type: "POST",
+            data: "title=" + title + "&author=" + author,
+            success: function (data, textStatus, XMLHttpRequest) {
+                if (data.code == "1") {
+                    //删除成功移除元素
+                    alert(msg);
+                    $(a).remove();
+                }
+                else if (data.code == "-1") {
+                    alert(msg);
+                }
+                else
+                    alert("未知错误");
+
+            }
+
+        });
+
+    }
+
+
+    //更改状态
+    function changestatus(ins)
+    {
+        
+        //获取单元格所在的行
+        var sm = ins.parentNode.parentNode.getElementsByTagName("td");
+        //获取行的值
+        var author = sm[1].innerText;
+        var title = sm[0].innerText;
+        var status = sm[4].innerText;
+        alert(title.value);
+        $.ajax({
+            url: "/Home/check",
+            type: "POST",
+            dataType: 'JSON',
+            data: "title=" + title + "&author=" + author + "&status=" + status,
+            success: function (data, textStatus, XMLHttpRequest) {
+               
+                if (data.code == 1) {
+                    alert("更改成功");
+                   
+                }
+                
+                if (data.code == -1) {
+                    alert("Error");
+                   
+                }
+            }
+        });
+
+    }
+
+    //添加
+    function add() {
+        document.location.href = "/Home/ADD";
+    }
+
+
+</script>
+
+</html>
+

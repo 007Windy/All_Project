@@ -1,0 +1,235 @@
+﻿@{
+    Layout = null;
+    var change = (Manager.Models.news)Session["change"];
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="@Url.Content("~/css/bootstrap.css")" rel="stylesheet">
+    <script src="@Url.Content("~/Script/bootstrap.js")"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/wangeditor@latest/dist/wangEditor.min.js"></script>
+    <meta charset ="utf-8">
+        <title></title>
+
+        <style type="text/css">
+
+            a:link {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                color: #6E6767;
+                text-decoration: double;
+            }
+
+            body {
+                background-color: #EEEEEE;
+            }
+
+            #container {
+                width: 1200px;
+                position: absolute;
+                left: 200px;
+            }
+
+            #banner {
+                background-color: yellow;
+                height: 150px;
+                width: auto;
+            }
+
+            #header {
+                width: 1200px;
+            }
+
+            #menu {
+                background-color: white;
+                height: 400px;
+                width: 200px;
+                float: left;
+                margin-right: 20px;
+                margin-left: 30px;
+            }
+
+            #menutitle {
+                font-size: 25px;
+                text-align: center;
+                background-color: whitesmoke;
+            }
+
+
+            .menu_href {
+                margin-top: 100px;
+                margin-left: 20px;
+            }
+
+
+
+            #menu table {
+                font-size: 18px;
+                text-align: center;
+                width: 80%;
+            }
+
+            #content {
+                background-color: white;
+                height: 800px;
+                width: 900px;
+                float: left;
+            }
+
+            #content_news {
+                height: 25px;
+                background-color: powderblue;
+            }
+
+            .conter_middle {
+                margin-top: 20px;
+            }
+
+
+                .conter_middle td, th {
+                    border: 1px solid #6e6767;
+                    height: 30px;
+                }
+
+            .conter_down {
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px;
+            }
+
+                .conter_down > * {
+                    margin-right: 8px;
+                }
+
+            input {
+                width: 500px;
+            }
+        </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+        </div>
+        <div id="header" style="background-color:white;    margin-bottom: 8px; margin-top: 0px; padding-top: 0px; height: 25px;">
+            您现在位置：首页>新闻
+        </div>
+
+        <div id="menu">
+            <div id="menutitle" style="font color: gray">
+                <font color="gray">菜单</font>
+            </div>
+            <div class="menu_href">
+                <table border="0" cellspacing="" cellpadding="10px">
+                    <tr><td><a href="">用户管理</a></td></tr>
+                    <tr> <td> <a href="">内容管理</a></td></tr>
+                    <tr> <td> <a href="">作者管理</a></td></tr>
+                </table>
+            </div>
+        </div>
+        <div id="content">
+            <div class="conter_middle">
+                <form action="/Home/article_update" method="post">
+                    <div style="margin-left: 200px;">
+                        作者:
+                        <input type="text" name="author" id="author" value="@change.author" />
+                    </div>
+
+                    <div style="margin-top: 20px; margin-left: 200px;">
+                        标题:
+                        <input type="text" name="title" id="title" value="@change.title" />
+                    </div>
+
+                    <div style="margin-top: 20px; margin-left: 200px;">
+                        来源:
+                        <input type="text" name="source" id="source" value="@change.source" />
+                    </div>
+
+                    <div style="margin-top: 20px; margin-left:200px ;">
+                        关键词:
+                        <input type="text" name="keyword" id="keyword" value="@change.keyword" />
+                    </div>
+
+                    <div style="margin-top: 20px; margin-left: 200px;">
+                        简介:
+                        <input type="text" name="keyword" id="introduce" value="@change.introduce" />
+                    </div>
+                    <div style="margin-top: 20px; margin-left: 200px;">
+                        内容:
+                        <input type="text" name="contents" id="contents" value="@change.contents" />
+                    </div>
+
+
+                    <div id="div1" style="margin-top: 20px;">
+
+                    </div>
+
+                    <div style="margin-top: 20px; margin-left: 400px;">
+                        <input type="submit" value="提交" onclick="" style="width: 50px;" />
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    //
+    const E = window.wangEditor;
+    const editor = new E('#div1');
+    // 或者 const editor = new E( document.getElementById('div1') )
+    editor.create();
+    //获取content的值 并且用于初始化editor
+    var con = document.getElementById("contents");
+    contentvalue = con.value;
+    editor.txt.html(contentvalue);
+    editor.config.onchange = function () {
+        //editor.txt.html();
+        con.value = editor.txt.html();
+    }
+
+
+    function add() {
+        var author = document.getElementById("author");
+        var title = document.getElementById("title");
+        var source = document.getElementById("source");
+        var keyword = document.getElementById("keyword");
+        var content = document.getElementById("conten_t");
+        var introduce = document.getElementById("introduce");
+        var contentvalue = content.innerText;
+
+        var value = author.value;
+        if (value != "" && title.value != "" && source.value != "" && keyword.value != "" && content.value != "" && introduce.value != "") {
+            alert(contentvalue);
+            $.ajax(
+                {
+                    url: "/Home/article_update",
+                    type: "POST",
+                    dataType: "JSON",
+                    data: "title=" + $("#title").val() + "&author=" + $("#author").val() + "&source=" + $("#source").val() + "&keyword=" + $("#keyword").val() + "&contents=" + contentvalue,
+                    success: function (data, textStatus, XMLHttpRequest) {
+                        if (data.code == "1") {
+                            alert(data.msg);
+                            document.location.href = data.url;
+                        }
+                        else {
+                            alert(data.msg);
+                        }
+                    }
+                });
+        }
+
+        else
+            alert("请输入完整的信息");
+    }
+</script>
+
+</html>
+
